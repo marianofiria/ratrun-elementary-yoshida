@@ -4,13 +4,14 @@ body {
 
 header {
   position: fixed;
-    display: flex;
-    color: #fff;
-    background: #ce5230;
-    width: 100%;
-    align-items: center;
-    padding: 30px 0;
-    z-index: 10;
+  display: flex;
+  color: #fff;
+  background: #ce5230;
+  width: 100%;
+  align-items: center;
+  padding: 30px 0;
+  z-index: 10;
+  height: 40px;
 }
 
 .text {
@@ -18,7 +19,7 @@ header {
  }
 
  .flex-left {
-  width: 70%;
+  width: 30%;
   padding-left: 20px;
  }
 
@@ -26,6 +27,250 @@ header {
   padding-right: 20px;
   gap: 20px;
   display: flex;
-  width: 30%;
+  width: 70%;
   justify-content: flex-end;
  }
+
+ .first-view {
+  background-color: #ce5230;
+  color: #fff;
+  text-align: center;
+ }
+
+ .first-view > img {
+  margin-top: 100px;
+  height: auto;
+  width: 500px;
+ }
+
+ .first-view p {
+  font-size: 20px;
+  padding-bottom: 75px;
+ }
+
+ .self-introduction {
+  background-color: #DAD2C4;
+  display: flex;
+ }
+
+ .self-introduction-left {
+  width: 50%;
+  text-align: center;
+ }
+
+ .self-introduction-left > img {
+  width: 500px;
+  height: auto;
+ }
+
+ .self-introduction-right {
+  width: 50%;
+  text-align: center;
+ }
+
+ .profile {
+  display: block;
+  text-align: left;
+  border: 4px solid #807F7D;
+  background: #CE5230;
+  color: white;
+  padding: 20px;
+  line-height: 2em;
+  width: 70%;
+  margin: 0 auto;
+ }
+
+ p {
+  margin: 0;
+ }
+
+ .interest {
+  display: flex;
+  background-color: #DAD2C4;
+  padding: 30px;
+ }
+
+ .interest-child {
+  width: 33%;
+  padding: 0 20px;
+  text-align: center;
+  color: #2d2d2d;
+ }
+
+ .interest-child > img {
+  height: auto;
+  width: 300px;
+ }
+
+ .interest-child > h2 {
+  color: #ce5230;
+  padding-bottom: 30px;
+}
+
+.career {
+  display: flex;
+  padding: 50px;
+  background-color: #DAD2C4;
+}
+
+.time-tree {
+  background-image: url(./img/time-tree.png);
+  background-size: 800px 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 600px;
+  padding: 20px;
+  position: relative;
+}
+
+.high-school {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  margin-left: -220px;
+  color: #fe5e6f;
+  font-weight: bold;
+}
+
+.university {
+  position: absolute;
+  color: #08a68e;
+  top: 280px;
+  left: 50%;
+  margin-left: 120px;
+}
+
+.job {
+  position: absolute;
+  top: 425px;
+  left: 50%;
+  margin-left: -220px;
+  color: #93b7c8;
+}
+
+.web-school {
+  position: absolute;
+  top: 620px;
+  left: 50%;
+  margin-left: 120px;
+  color: #285b6d;
+}
+
+.img-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-area > img {
+  display: block;
+  width: 300px;
+  height: auto;
+}
+
+@media screen and (max-width: 1080px) {
+  header {
+    padding: 10px 0;
+    justify-content: flex-start;
+  }
+  .flex-left {
+    font-size: 16px;
+  }
+  .flex-right {
+    gap: 20px;
+    padding-right: 20px;
+  }
+
+  .first-view {
+    padding: 200px 50px;
+  }
+.first-view > img {
+    padding-top: 30px;
+    width: 70%;
+  }
+.first-view > p {
+    font-size: 18px;
+  }
+
+  .interest {
+    display: block;
+  }
+  .interest-child {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .self-introduction {
+    display: block;
+  }
+  .self-introduction-left {
+    width: 100%;
+    text-align: center;
+  }
+  .self-introduction-left > img {
+    height: auto;
+    width: 300px;
+    padding: 50px;
+  }
+  .self-introduction-right {
+    width: 100%;
+  }
+  .self-introduction-right > h2 {
+    padding: 50px 20px;
+  }
+
+  .career {
+    display: block;
+    padding: 50px 0;
+  }
+
+  .time-tree {
+    background-size: 650px 650px;
+    background-position: cover;
+    width: 100%;
+    height: 600px;
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .high-school {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -175px;
+    color: #fe5e6f;
+    font-weight: bold;
+  }
+  
+  .university {
+    position: absolute;
+    color: #08a68e;
+    top: 180px;
+    left: 50%;
+    margin-left: 110px;
+  }
+  
+  .job {
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    margin-left: -175px;
+    color: #93b7c8;
+  }
+  
+  .web-school {
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    margin-left: 110px;
+    color: #285b6d;
+  }
+  
+  .img-area {
+    display: block;
+  }
+
+  .img-area > img {
+    margin: 0 auto;
+  }
+}
