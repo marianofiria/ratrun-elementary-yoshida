@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: #fff;
+}
+
 header {
   position: fixed;
   display: flex;
@@ -12,6 +16,10 @@ header {
   padding: 30px 0;
   z-index: 10;
   height: 40px;
+}
+
+.flex-right > a {
+  text-decoration: none;
 }
 
 .text {
@@ -126,7 +134,7 @@ header {
 
 .high-school {
   position: absolute;
-  top: 65px;
+  top: 90px;
   left: 50%;
   margin-left: -220px;
   color: #fe5e6f;
@@ -143,7 +151,7 @@ header {
 
 .job {
   position: absolute;
-  top: 425px;
+  top: 450px;
   left: 50%;
   margin-left: -220px;
   color: #93b7c8;
@@ -151,7 +159,7 @@ header {
 
 .web-school {
   position: absolute;
-  top: 620px;
+  top: 640px;
   left: 50%;
   margin-left: 120px;
   color: #285b6d;
@@ -235,7 +243,7 @@ header {
 
   .high-school {
     position: absolute;
-    top: 30px;
+    top: 35px;
     left: 50%;
     margin-left: -175px;
     color: #fe5e6f;
@@ -282,6 +290,8 @@ header {
   align-items: center;
   color: #fff;
   width: 100%;
+  font-size: 16px;
+  font-family: "Comic Sans MS";
 }
 
 .footer-menu-left {
@@ -296,6 +306,9 @@ header {
 }
 
 .footer-menu-right > p > a{
-  color: #fff;
   text-decoration: none;
+}
+
+.copyright {
+  font-size: 12px;
 }
